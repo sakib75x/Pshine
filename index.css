@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+button:hover {
+  cursor: pointer;
+}
+.tiptap {
+  :first-child {
+    margin-top: 0;
+  }
+}
