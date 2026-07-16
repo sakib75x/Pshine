@@ -72,12 +72,12 @@ export default function Test() {
         className="mb-6 max-w-md rounded-lg border border-gray-200 bg-white p-4 shadow-sm"
         onSubmit={handleAddData}
       >
-        <h1 className="mb-4 text-xl font-semibold">Add Product</h1>
+        <h1 className="mb-4 text-xl font-semibold text-slate-800">Add Product</h1>
 
         <div className="mb-3">
-          <label className="mb-1 block text-sm font-medium">Name</label>
+          <label className="mb-1 block text-sm font-medium text-gray-700">Name</label>
           <input
-            className="w-full rounded-md border border-gray-300 p-2 outline-none focus:border-green-500"
+            className="w-full rounded-md border border-gray-300 p-2 text-gray-900 placeholder-gray-400 outline-none focus:border-green-500"
             type="text"
             name="name"
             value={formData.name}
@@ -86,9 +86,9 @@ export default function Test() {
         </div>
 
         <div className="mb-3">
-          <label className="mb-1 block text-sm font-medium">Price</label>
+          <label className="mb-1 block text-sm font-medium text-gray-700">Price</label>
           <input
-            className="w-full rounded-md border border-gray-300 p-2 outline-none focus:border-green-500"
+            className="w-full rounded-md border border-gray-300 p-2 text-gray-900 placeholder-gray-400 outline-none focus:border-green-500"
             type="number"
             name="price"
             value={formData.price}
@@ -97,9 +97,9 @@ export default function Test() {
         </div>
 
         <div className="mb-3">
-          <label className="mb-1 block text-sm font-medium">Description</label>
+          <label className="mb-1 block text-sm font-medium text-gray-700">Description</label>
           <textarea
-            className="w-full rounded-md border border-gray-300 p-2 outline-none focus:border-green-500"
+            className="w-full rounded-md border border-gray-300 p-2 text-gray-900 placeholder-gray-400 outline-none focus:border-green-500"
             name="description"
             rows="4"
             value={formData.description}
@@ -108,9 +108,9 @@ export default function Test() {
         </div>
 
         <div className="mb-4">
-          <label className="mb-1 block text-sm font-medium">Image</label>
+          <label className="mb-1 block text-sm font-medium text-gray-700">Image</label>
           <input
-            className="w-full rounded-md border border-gray-300 p-2 outline-none focus:border-green-500"
+            className="w-full rounded-md border border-gray-300 p-2 text-gray-900 outline-none focus:border-green-500"
             type="file"
             name="image"
             accept="image/*"
@@ -119,7 +119,7 @@ export default function Test() {
         </div>
 
         <button
-          className="rounded-lg bg-green-500 px-4 py-2 text-white"
+          className="rounded-lg bg-green-500 px-4 py-2 text-white font-medium hover:bg-green-600 transition-colors"
           type="submit"
         >
           Add Data
